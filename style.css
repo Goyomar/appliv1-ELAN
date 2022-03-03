@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    max-width: 1024px;
+    margin:auto;
+    background-color: lightgoldenrodyellow;
+}
+
+header{
+    background-color: goldenrod;
+    padding:1em 0;
+    margin-top: 1em;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+header li{
+    list-style: none;
+    font-size: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    border-bottom: 2px dashed orangered;
+}
+
+h2{
+    text-align: center;
+}
+
+input[type="text"], input[type="number"], input[type="url"], textarea{
+    width: 100%;
+    margin-top: 1em;
+}
+
+label{
+    padding-left: 10px;
+}
+
+.addProduit{
+    text-align: center;
+}
+
+.addProduit input{
+    background-color:cornflowerblue;
+    padding: 5px 10px;
+}
+
+.modifProduit{
+    text-align: center;
+}
+
+.modifProduit input{
+    background-color: yellowgreen;
+    padding: 5px 10px;
+}
+
+#reinit{
+    display:flex;
+    justify-content: center;
+    width:150px;
+    margin: 2em auto;
+}
+
+.delete{
+    color:red;
+}
+
+.modif{
+    color:yellowgreen;
+}
+
+.deleteAll{
+    text-align: center;
+    margin-top: 15px;
+    background-color: red;
+    border:2px solid black;
+    color: white;
+    padding: 10px 15px ;
+    text-transform: uppercase;
+}
+
+.non{
+    background-color: red;
+    color:white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 1.5em;
+    animation-duration: 10s;
+    animation-name: disappear;
+}
+
+.oui{
+    background-color: green;
+    color:white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 1.5em;
+    animation-duration: 10s;
+    animation-name: disappear;
+}
+
+@keyframes disappear {
+    from {
+        margin-left: 0%;
+        display:block;
+    }
+    60% {
+        margin-left: 100%;
+        display: none;
+        background-color: white;
+        color:white;
+    }
+    to {
+        margin-left: 100%;
+        display: none;
+        background-color: white;
+        color:white;
+    }
+  }
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody{
+    text-align: center;
+}
+
+td,th{
+    border: 2px solid cornflowerblue;
+    padding:1em 0px;
+}
+
+.plusqte{
+    margin-left: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    padding:0 2px;
+}
+
+.minusqte{
+    margin-right: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    padding:0 3px;
+}
